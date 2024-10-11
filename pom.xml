@@ -38,12 +38,14 @@
     </dependencies>
 
     <build>
-        <plugins>
-            <!-- Plugin to package the project as a Spring Boot executable JAR -->
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
-</project>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <version>3.0.0</version>
+            <configuration>
+                <mainClass>com.example.personalwebsite.PersonalWebsiteApplication</mainClass>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
